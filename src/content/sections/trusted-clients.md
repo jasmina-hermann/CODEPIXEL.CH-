@@ -31,4 +31,7 @@ items:
   - name: H-R-R Facility
     logo: /images/trusted-clients/hrr-facility.svg
     link: "https://www.h-r-r.ch/"
+  - name: Herzog Beschriftungen
+    logo: /images/trusted-clients/herzog-beschriftungen.svg
+    link: "http://herzog-grafik.ch/adw/"
 ---
