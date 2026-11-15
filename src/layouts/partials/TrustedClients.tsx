@@ -45,7 +45,7 @@ const TrustedClients = ({ data }: { data: PageData }) => {
   const renderLogoList = (listKey: string, hidden = false) => (
     <div
       ref={hidden ? undefined : groupRef}
-      className="flex shrink-0 gap-18"
+      className="flex shrink-0 items-center gap-18"
       aria-hidden={hidden}
     >
       {section.items.map((logo, index) => {
