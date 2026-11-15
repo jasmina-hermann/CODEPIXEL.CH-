@@ -37,4 +37,7 @@ items:
   - name: Narkose-Team.ch
     logo: /images/trusted-clients/narkose-team.svg
     link: "https://www.narkose-team.ch/"
+  - name: Autotransport Europa
+    logo: /images/trusted-clients/autotransport-europa.svg
+    link: "https://www.autotransport-europa.ch/"
 ---
