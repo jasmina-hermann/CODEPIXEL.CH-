@@ -34,4 +34,7 @@ items:
   - name: Herzog Beschriftungen
     logo: /images/trusted-clients/herzog-beschriftungen.svg
     link: "http://herzog-grafik.ch/adw/"
+  - name: Narkose-Team.ch
+    logo: /images/trusted-clients/narkose-team.svg
+    link: "https://www.narkose-team.ch/"
 ---
