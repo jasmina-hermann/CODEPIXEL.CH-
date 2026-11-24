@@ -83,9 +83,15 @@ const rotatingPrefix: string = data.rotating_prefix ?? "";
             }
           </h1>
           <!-- CONTENT -->
-          <p id="hero-content" class="text-lg sm:w-3/5">
-            {data.content}
-          </p>
+          <div id="hero-content" class="cp-hero-copy sm:w-3/5">
+            {data.subtitle && <p class="cp-hero-subtitle">{data.subtitle}</p>}
+            {
+              (Array.isArray(data.content) ? data.content : [data.content])
+                .filter(Boolean)
+                .map((text: string) => <p class="text-lg">{text}</p>)
+            }
+            {data.closing && <p class="cp-hero-closing">{data.closing}</p>}
+          </div>
         </div>
       </div>
     </div>
@@ -239,6 +245,27 @@ const rotatingPrefix: string = data.rotating_prefix ?? "";
 
   /* Farbiger Verlauf für markierte Wörter (z. B. ==Kunden==) */
   #hero-title :global(mark:not(.heading-script-accent)) {
+    color: transparent;
+    background: linear-gradient(110deg, #ffd000 0%, #ff9800 58%, #f36a00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .cp-hero-copy {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .cp-hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff8e8;
+  }
+
+  .cp-hero-closing {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     color: transparent;
     background: linear-gradient(110deg, #ffd000 0%, #ff9800 58%, #f36a00 100%);
     background-clip: text;
