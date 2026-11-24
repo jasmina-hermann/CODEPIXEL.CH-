@@ -6,11 +6,55 @@
     },
     {
       "name": "Webseiten",
-      "url": "/leistungen/webseiten"
+      "url": "/leistungen/webseiten",
+      "hasChildren": true,
+      "mega_menu": {
+        "mega_menu_title": "Webseiten",
+        "page_title": "",
+        "mega_menu_groups": [
+          [
+            {
+              "name": "Webseiten",
+              "url": "/leistungen/webseiten",
+              "description": "Design, das Anfragen bringt",
+              "icon": "HiOutlineNewspaper"
+            },
+            {
+              "name": "Preise & Pakete",
+              "url": "/leistungen/webseiten#preise",
+              "description": "Onepager, KMU Basic, Business",
+              "icon": "HiOutlineTag"
+            }
+          ]
+        ],
+        "page_links": []
+      }
     },
     {
       "name": "Software & Apps",
-      "url": "/leistungen/software"
+      "url": "/leistungen/software",
+      "hasChildren": true,
+      "mega_menu": {
+        "mega_menu_title": "Software & Apps",
+        "page_title": "",
+        "mega_menu_groups": [
+          [
+            {
+              "name": "Software & Apps",
+              "url": "/leistungen/software",
+              "description": "Programme und Apps nach Mass",
+              "icon": "HiOutlineCog"
+            },
+            {
+              "name": "Preise & Pakete",
+              "url": "/leistungen/software#preise",
+              "description": "Workshop, Start-Paket, Individuell",
+              "icon": "HiOutlineTag"
+            }
+          ]
+        ],
+        "page_links": []
+      }
     },
     {
       "name": "Prozesscoaching",
@@ -28,19 +72,29 @@
               "icon": "HiOutlineChartBar"
             },
             {
+              "name": "Preise & Pakete",
+              "url": "/leistungen/prozesscoaching#preise",
+              "description": "Prozess-Check, Coaching, Begleitung",
+              "icon": "HiOutlineTag"
+            }
+          ],
+          [
+            {
               "name": "Buchhaltung, Administration & HR",
               "url": "/leistungen/buchhaltung",
               "description": "Zahlen, Löhne und Personal im Griff",
               "icon": "HiOutlineCalculator"
+            },
+            {
+              "name": "Preise & Pakete",
+              "url": "/leistungen/buchhaltung#preise",
+              "description": "Einrichtung, laufend, mit Löhnen & HR",
+              "icon": "HiOutlineTag"
             }
           ]
         ],
         "page_links": []
       }
-    },
-    {
-      "name": "Preise",
-      "url": "/preise"
     },
     {
       "name": "Über uns",
