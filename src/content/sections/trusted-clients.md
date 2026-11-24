@@ -1,6 +1,6 @@
 ---
 enable: true
-title: Unternehmen, die uns vertrauen
+title: Referenzen
 items:
   - name: Swiss Leak Control
     logo: /images/trusted-clients/swiss-leak-control.png

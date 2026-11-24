@@ -1,7 +1,7 @@
 import ImageFallback from "@/helpers/ImageFallback";
 import type { LogoMarqueeType } from "@/types/index";
-import { motion } from "motion/react";
-import { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
+import { useEffect, useState } from "react";
 
 interface PageData {
   notFound?: boolean;
@@ -9,84 +9,48 @@ interface PageData {
   frontmatter: LogoMarqueeType;
 }
 
-const LOGO_GAP_PX = 72;
-const MARQUEE_SPEED_PX_PER_SECOND = 35;
+// Wie lange ein Logo sichtbar bleibt (in Millisekunden)
+const SHOW_TIME_MS = 3200;
 
 const TrustedClients = ({ data }: { data: PageData }) => {
   const section = data.frontmatter;
   const swissLabel = (section as any).swiss_label || "Webdesign aus der Schweiz";
   const swissAria = (section as any).swiss_aria || "Swiss Made, Webdesign aus der Schweiz";
-  const groupRef = useRef<HTMLDivElement>(null);
-  const [groupWidth, setGroupWidth] = useState(0);
+  const items = section.items ?? [];
+  const [active, setActive] = useState(0);
+  const [paused, setPaused] = useState(false);
 
   useEffect(() => {
-    const updateGroupWidth = () => {
-      setGroupWidth(groupRef.current?.scrollWidth ?? 0);
-    };
+    if (items.length < 2 || paused) return;
+    const timer = window.setTimeout(() => {
+      setActive((i) => (i + 1) % items.length);
+    }, SHOW_TIME_MS);
+    return () => window.clearTimeout(timer);
+  }, [active, paused, items.length]);
 
-    updateGroupWidth();
-
-    window.addEventListener("resize", updateGroupWidth);
-
-    return () => {
-      window.removeEventListener("resize", updateGroupWidth);
-    };
-  }, [section.items]);
-
-  if (!section.items.length) {
+  if (!items.length) {
     return null;
   }
 
-  const loopDistance = groupWidth + LOGO_GAP_PX;
-  const loopDuration = loopDistance
-    ? loopDistance / MARQUEE_SPEED_PX_PER_SECOND
-    : 12;
+  const logo: any = items[active];
+  const partnerLink = logo?.link;
+  const displayAsCard = logo?.display === "card";
+  const displayLarge = logo?.display === "large";
 
-  const renderLogoList = (listKey: string, hidden = false) => (
-    <div
-      ref={hidden ? undefined : groupRef}
-      className="flex shrink-0 items-center gap-18"
-      aria-hidden={hidden}
-    >
-      {section.items.map((logo, index) => {
-        const partnerLink = (logo as any)?.link;
-        const displayAsCard = (logo as any)?.display === "card";
-        const displayLarge = (logo as any)?.display === "large";
-        const partnerImage = (
-          <ImageFallback
-            src={logo?.logo}
-            alt={logo?.name || `Partnerlogo ${index + 1}`}
-            className={
-              displayAsCard
-                ? "h-20 w-52 object-contain grayscale opacity-70"
-                : displayLarge
-                  ? "h-20 w-64 object-contain grayscale opacity-70"
-                  : "w-45 grayscale opacity-70"
-            }
-            width={displayAsCard ? "208" : displayLarge ? "256" : "190"}
-            height={displayAsCard || displayLarge ? "80" : "40"}
-          />
-        );
-
-        return (
-          <div key={`${listKey}-${index}`} className="shrink-0">
-            {partnerLink && partnerLink !== "#" ? (
-              <a
-                href={partnerLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`${logo?.name || "Partner"} Webseite öffnen`}
-                className="block rounded-xl transition duration-300 hover:scale-105 hover:opacity-100"
-              >
-                {partnerImage}
-              </a>
-            ) : (
-              partnerImage
-            )}
-          </div>
-        );
-      })}
-    </div>
+  const partnerImage = (
+    <ImageFallback
+      src={logo?.logo}
+      alt={logo?.name || `Referenz ${active + 1}`}
+      className={
+        displayAsCard
+          ? "h-24 w-64 object-contain grayscale"
+          : displayLarge
+            ? "h-24 w-72 object-contain grayscale"
+            : "h-20 w-60 object-contain grayscale"
+      }
+      width={displayAsCard ? "256" : displayLarge ? "288" : "240"}
+      height={displayAsCard || displayLarge ? "96" : "80"}
+    />
   );
 
   return (
@@ -98,24 +62,69 @@ const TrustedClients = ({ data }: { data: PageData }) => {
               {section.title}
             </h2>
 
-            <div className="z-10 flex items-center relative overflow-hidden">
-              <motion.div
-                className="flex w-max gap-18"
-                animate={loopDistance ? { x: [0, -loopDistance] } : undefined}
-                transition={{
-                  x: {
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    duration: loopDuration,
-                    ease: "linear",
-                  },
-                }}
-                style={{ willChange: "transform" }}
-              >
-                {renderLogoList("primary")}
-                {renderLogoList("duplicate", true)}
-              </motion.div>
+            <div
+              className="relative mx-auto flex h-48 max-w-xl items-center justify-center overflow-hidden rounded-3xl"
+              onMouseEnter={() => setPaused(true)}
+              onMouseLeave={() => setPaused(false)}
+              style={{
+                border: "1px solid rgba(255, 152, 0, 0.18)",
+                background:
+                  "radial-gradient(ellipse 70% 80% at 50% 50%, rgba(255,152,0,0.10), rgba(9,10,13,0.0) 70%), linear-gradient(160deg, rgba(23,16,6,0.6), rgba(9,10,13,0.85))",
+                boxShadow: "0 0 40px -14px rgba(255,152,0,0.35)",
+              }}
+            >
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={active}
+                  className="flex flex-col items-center gap-4"
+                  initial={{ opacity: 0, scale: 0.92, filter: "blur(8px)" }}
+                  animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                  exit={{ opacity: 0, scale: 1.04, filter: "blur(8px)" }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                >
+                  {partnerLink && partnerLink !== "#" ? (
+                    <a
+                      href={partnerLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${logo?.name || "Referenz"} Webseite öffnen`}
+                      className="block rounded-xl transition duration-300 hover:scale-105"
+                    >
+                      {partnerImage}
+                    </a>
+                  ) : (
+                    partnerImage
+                  )}
+                  <span className="text-sm font-medium tracking-wide text-gray">
+                    {logo?.name}
+                  </span>
+                </motion.div>
+              </AnimatePresence>
             </div>
+
+            {/* Punkte: zeigen, welches Logo gerade sichtbar ist */}
+            {items.length > 1 && (
+              <div className="mt-6 flex flex-wrap justify-center gap-2">
+                {items.map((item: any, i: number) => (
+                  <button
+                    key={item?.name || i}
+                    type="button"
+                    onClick={() => setActive(i)}
+                    aria-label={`${item?.name || `Referenz ${i + 1}`} anzeigen`}
+                    className="h-2 rounded-full transition-all duration-300"
+                    style={{
+                      width: i === active ? "28px" : "8px",
+                      background:
+                        i === active
+                          ? "linear-gradient(90deg, #ffd000, #ff9800)"
+                          : "rgba(255, 248, 232, 0.18)",
+                      boxShadow:
+                        i === active ? "0 0 10px rgba(255, 208, 0, 0.6)" : "none",
+                    }}
+                  />
+                ))}
+              </div>
+            )}
 
             <div
               className="mx-auto mt-12 flex w-fit items-center gap-4 rounded-2xl px-6 py-4"
