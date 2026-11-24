@@ -15,7 +15,7 @@ banner:
     - "Darüber hinaus unterstützen wir KMU bei der Optimierung und Organisation ihrer internen Abläufe. Ob Administration, Buchhaltung, Personalwesen (HR) oder betriebliche Prozesse: Wir helfen dabei, Strukturen aufzubauen, Arbeitsabläufe zu vereinfachen und Unternehmen effizienter zu gestalten."
   closing: "Von der digitalen Entwicklung bis zur Unternehmensorganisation."
   badge:
-    enable: true
+    enable: false
     label: codepixel.ch
     images: []
   image: "/images/banner.png"
