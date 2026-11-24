@@ -425,32 +425,25 @@ export const services: Service[] = [
 
   {
     slug: "buchhaltung",
-    name: "Buchhaltung",
-    badge: "Buchhaltung",
-    metaTitle: "Buchhaltung für KMU und Selbstständige | Codepixel",
+    name: "Buchhaltung, Administration & HR",
+    badge: "Prozesscoaching · Buchhaltung & HR",
+    metaTitle: "Buchhaltung, Administration und HR für KMU | Codepixel",
     metaDescription:
-      "Laufende Buchhaltung, MWST-Abrechnung, Lohnbuchhaltung und digitale Belegablage für KMU in Thurgau, Zürich und St. Gallen. Persönlich und transparent.",
-    heroTitle: "Buchhaltung, die einfach <span class='heading-script-accent'>stimmt</span>",
+      "Laufende Buchhaltung, MWST, Lohnbuchhaltung, Personaladministration und Büroorganisation für KMU in Thurgau, Zürich und St. Gallen. Persönlich und transparent.",
+    heroTitle: "Zahlen, Löhne und Personal im <span class='heading-script-accent'>Griff</span>",
     heroSubtitle:
-      "Laufende Buchhaltung, Löhne und MWST aus einer Hand. Digital, pünktlich und mit klarem Überblick über Ihre Zahlen.",
-    menuDescription: "Zahlen im Griff, ohne Stress",
+      "Buchhaltung, Administration und HR aus einer Hand. Digital organisiert, pünktlich erledigt und mit klarem Überblick.",
+    menuDescription: "Zahlen, Löhne und Personal im Griff",
     menuIcon: "HiOutlineCalculator",
     intro:
-      "Belege sammeln, Rechnungen nachführen, Fristen einhalten: Buchhaltung frisst Zeit, die im Tagesgeschäft fehlt. Wir übernehmen das und sorgen für Ordnung in Ihren Zahlen.",
+      "Belege, Löhne, Verträge, Fristen: Die Administration frisst Zeit, die im Tagesgeschäft fehlt. Wir übernehmen sie oder richten sie so ein, dass sie fast von selbst läuft.",
     pairs: [
       {
-        problem: "Belege stapeln sich",
-        problemText: "Quittungen, Rechnungen und Kontoauszüge liegen verteilt in Ordnern, E-Mails und Schubladen.",
-        solution: "Digitale Belegablage",
+        problem: "Belege stapeln sich, der Überblick fehlt",
+        problemText: "Quittungen und Rechnungen liegen verteilt, und wie es dem Unternehmen geht, zeigt sich erst beim Abschluss.",
+        solution: "Digitale, laufende Buchhaltung",
         solutionText:
-          "Belege werden fotografiert oder weitergeleitet und landen automatisch am richtigen Ort. Nichts geht mehr verloren.",
-      },
-      {
-        problem: "Kein Überblick über die Zahlen",
-        problemText: "Wie es dem Unternehmen wirklich geht, zeigt sich erst beim Jahresabschluss.",
-        solution: "Laufende Buchhaltung mit Auswertung",
-        solutionText:
-          "Ihre Buchhaltung ist immer aktuell. Sie sehen Umsatz, Kosten und offene Rechnungen jederzeit auf einen Blick.",
+          "Belege landen digital am richtigen Ort, die Buchhaltung ist immer aktuell und Sie sehen Ihre Zahlen jederzeit auf einen Blick.",
       },
       {
         problem: "MWST und Fristen bereiten Sorgen",
@@ -460,18 +453,25 @@ export const services: Service[] = [
           "Wir erstellen Ihre MWST-Abrechnungen termingerecht und behalten alle Fristen für Sie im Blick.",
       },
       {
-        problem: "Löhne kosten jeden Monat Nerven",
-        problemText: "Lohnabrechnungen, Sozialversicherungen und Lohnausweise sind aufwendig und fehleranfällig.",
-        solution: "Lohnbuchhaltung aus einer Hand",
+        problem: "Löhne und Personal kosten Nerven",
+        problemText: "Lohnabrechnungen, Sozialversicherungen, Verträge und Absenzen sind aufwendig und fehleranfällig.",
+        solution: "Lohnbuchhaltung und Personaladministration",
         solutionText:
-          "Wir erstellen Lohnabrechnungen, Meldungen an die Sozialversicherungen und die Lohnausweise am Jahresende.",
+          "Wir erstellen Löhne und Lohnausweise, übernehmen Meldungen an die Sozialversicherungen und unterstützen bei Arbeitsverträgen, Ein- und Austritten.",
+      },
+      {
+        problem: "Die Administration läuft nebenher",
+        problemText: "Ablage, Offerten, Mahnungen und Vorlagen werden immer dann erledigt, wenn gerade Zeit bleibt.",
+        solution: "Klare Abläufe fürs Büro",
+        solutionText:
+          "Wir ordnen Ablage und Vorlagen, richten Mahnwesen und wiederkehrende Aufgaben ein und automatisieren, was sich wiederholt.",
       },
     ],
-    stepsTitle: "So übernehmen wir Ihre Buchhaltung",
+    stepsTitle: "So übernehmen wir Ihre Administration",
     steps: [
       { title: "Kennenlernen", text: "Wir besprechen Ihr Unternehmen, Ihre aktuelle Buchhaltung und was Sie abgeben möchten." },
       { title: "Einrichten", text: "Wir richten die Buchhaltungssoftware und die digitale Belegablage ein oder übernehmen Ihre bestehende Lösung." },
-      { title: "Laufend buchen", text: "Wir verbuchen Belege, gleichen Konten ab und erstellen MWST- und Lohnabrechnungen termingerecht." },
+      { title: "Laufend erledigen", text: "Wir verbuchen Belege, erstellen MWST- und Lohnabrechnungen und kümmern uns um die Personaladministration." },
       { title: "Abschluss vorbereiten", text: "Wir bereiten den Jahresabschluss sauber vor und stimmen ihn mit Ihnen oder Ihrer Treuhand ab." },
     ],
     packagesTitle: "Pakete und Preise",
@@ -503,15 +503,15 @@ export const services: Service[] = [
         ],
       },
       {
-        name: "Buchhaltung & Löhne",
+        name: "Buchhaltung, Löhne & HR",
         price: "Ab CHF 390.–",
         priceNote: "pro Monat",
-        description: "Für Unternehmen mit Mitarbeitenden, die alles aus einer Hand möchten.",
+        description: "Für Unternehmen mit Mitarbeitenden, die Zahlen und Personal aus einer Hand möchten.",
         features: [
           "Alles aus «Buchhaltung laufend»",
-          "Monatliche Lohnabrechnungen",
+          "Monatliche Lohnabrechnungen und Lohnausweise",
           "Meldungen an Sozialversicherungen",
-          "Lohnausweise und Vorbereitung Jahresabschluss",
+          "Personaladministration (Verträge, Ein- und Austritte)",
         ],
       },
     ],
@@ -525,6 +525,11 @@ export const services: Service[] = [
           "Bevorzugt mit bexio. Wir können aber auch Ihre bestehende Lösung übernehmen. Das klären wir im Erstgespräch.",
       },
       {
+        question: "Übernehmen Sie auch Aufgaben im Personalbereich?",
+        answer:
+          "Ja. Neben den Löhnen unterstützen wir bei Arbeitsverträgen, Ein- und Austritten, Absenzen und Arbeitszeugnissen. Was genau, legen wir gemeinsam fest.",
+      },
+      {
         question: "Muss ich meine Belege noch in Papierform abgeben?",
         answer:
           "Nein. Sie fotografieren Belege mit dem Handy oder leiten sie per E-Mail weiter. Den Rest erledigen wir.",
@@ -535,8 +540,8 @@ export const services: Service[] = [
           "Wir bereiten den Jahresabschluss vollständig vor und arbeiten bei Bedarf mit Ihrer Treuhand zusammen. Was genau übernommen wird, legen wir gemeinsam fest.",
       },
     ],
-    ctaTitle: "Bereit für Zahlen, die <span class='heading-script-accent'>stimmen</span>?",
-    ctaText: "Erzählen Sie uns, wie Ihre Buchhaltung heute läuft. Sie erhalten eine unverbindliche Einschätzung.",
+    ctaTitle: "Weniger Büro, mehr <span class='heading-script-accent'>Zeit</span>?",
+    ctaText: "Erzählen Sie uns, wie Buchhaltung und Administration heute laufen. Sie erhalten eine unverbindliche Einschätzung.",
   },
 ];
 

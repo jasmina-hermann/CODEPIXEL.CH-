@@ -14,11 +14,29 @@
     },
     {
       "name": "Prozesscoaching",
-      "url": "/leistungen/prozesscoaching"
-    },
-    {
-      "name": "Buchhaltung",
-      "url": "/leistungen/buchhaltung"
+      "url": "/leistungen/prozesscoaching",
+      "hasChildren": true,
+      "mega_menu": {
+        "mega_menu_title": "Prozesscoaching",
+        "page_title": "",
+        "mega_menu_groups": [
+          [
+            {
+              "name": "Prozesse & Coaching",
+              "url": "/leistungen/prozesscoaching",
+              "description": "Abläufe verbessern, Team begleiten",
+              "icon": "HiOutlineChartBar"
+            },
+            {
+              "name": "Buchhaltung, Administration & HR",
+              "url": "/leistungen/buchhaltung",
+              "description": "Zahlen, Löhne und Personal im Griff",
+              "icon": "HiOutlineCalculator"
+            }
+          ]
+        ],
+        "page_links": []
+      }
     },
     {
       "name": "Preise",
@@ -51,7 +69,7 @@
       "url": "/leistungen/prozesscoaching"
     },
     {
-      "name": "Buchhaltung",
+      "name": "Buchhaltung & HR",
       "url": "/leistungen/buchhaltung"
     },
     {
