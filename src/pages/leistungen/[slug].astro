@@ -159,7 +159,9 @@ const callToAction = {
     </div>
   </section>
 
-  <!-- Passende Projekte -->
+  <!-- Passende Projekte (nur wenn vorhanden) -->
+  {
+    service.related.length > 0 && (
   <section class="cpx-section">
     <div class="main-container">
       <div class="container">
@@ -183,6 +185,8 @@ const callToAction = {
       </div>
     </div>
   </section>
+    )
+  }
 
   <!-- Google Bewertungen -->
   <GoogleReviews client:visible />

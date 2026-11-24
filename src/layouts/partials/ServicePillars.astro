@@ -21,19 +21,19 @@ const pillars = [
   },
   {
     key: "process",
-    href: "/leistungen/prozesse",
+    href: "/leistungen/prozesscoaching",
     number: "03",
-    title: "Prozesse & Automatisierung",
-    text: "Wir verbinden Ihre Systeme und nehmen Ihrem Team wiederkehrende Handarbeit ab.",
-    points: ["Prozess-Analyse", "Schnittstellen (z. B. Bexio)", "Automatische Abläufe"],
+    title: "Prozesscoaching",
+    text: "Wir verbessern Ihre Abläufe, automatisieren Handarbeit und begleiten Ihr Team, bis alles im Alltag sitzt.",
+    points: ["Prozess-Analyse", "Automatisierung (z. B. Bexio)", "Coaching & Schulung im Team"],
   },
   {
-    key: "coaching",
-    href: "/leistungen/coaching",
+    key: "finance",
+    href: "/leistungen/buchhaltung",
     number: "04",
-    title: "Coaching & Begleitung",
-    text: "Ehrliche Beratung und praxisnahe Begleitung, damit neue Werkzeuge im Alltag wirklich ankommen.",
-    points: ["Digitalisierungs-Coaching", "Führung & Struktur", "Schulung Ihres Teams"],
+    title: "Buchhaltung",
+    text: "Laufende Buchhaltung, Löhne und MWST aus einer Hand, digital und mit klarem Überblick über Ihre Zahlen.",
+    points: ["Finanzbuchhaltung", "Lohnbuchhaltung", "MWST-Abrechnung"],
   },
 ];
 ---
@@ -91,7 +91,7 @@ const pillars = [
                         <text x="200" y="64" text-anchor="middle">✓</text>
                       </svg>
                     )}
-                    {pillar.key === "coaching" && (
+                    {pillar.key === "finance" && (
                       <div class="v-chart">
                         <span style="--h:28%;--d:0" />
                         <span style="--h:42%;--d:1" />

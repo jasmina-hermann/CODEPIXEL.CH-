@@ -61,6 +61,8 @@ export default defineConfig({
     "/case-studies/case-study-3": "/projekte/case-study-3",
     "/case-studies/case-study-4": "/projekte/case-study-4",
     "/case-studies/case-study-5": "/projekte/case-study-5",
+    "/leistungen/prozesse": "/leistungen/prozesscoaching",
+    "/leistungen/coaching": "/leistungen/prozesscoaching",
   },
   vite: {
     plugins: [tailwindcss()],

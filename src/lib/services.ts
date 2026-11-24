@@ -1,5 +1,5 @@
 // Alle Inhalte der Leistungs-Unterseiten (/leistungen/...).
-// ACHTUNG: Preise bei "software", "prozesse" und "coaching" sind VORSCHLÄGE.
+// ACHTUNG: Preise bei "software", "prozesscoaching" und "buchhaltung" sind VORSCHLÄGE.
 // Bitte vor dem Livegang prüfen und anpassen.
 
 export interface ServicePair {
@@ -162,7 +162,7 @@ export const services: Service[] = [
     related: [
       {
         title: "Webseiten nach Mass für starke Unternehmen",
-        url: "/case-studies/case-study-4",
+        url: "/projekte/case-study-4",
         text: "So entsteht ein Webauftritt, der Vertrauen schafft und Anfragen unterstützt.",
       },
     ],
@@ -280,9 +280,9 @@ export const services: Service[] = [
     packagesNote:
       "Der Konzept-Workshop wird bei einer anschliessenden Beauftragung auf Wunsch angerechnet. Betreuung und Weiterentwicklung nach dem Start auf Anfrage.",
     related: [
-      { title: "Kita Connect", url: "/case-studies/case-study-1", text: "App für Eltern und Betreuungsteams." },
-      { title: "Garage Flow", url: "/case-studies/case-study-2", text: "Werkstatt-App für Termine, Fahrzeuge und Aufträge." },
-      { title: "Service Pilot", url: "/case-studies/case-study-3", text: "Mobile Lösung für Klima- und Heizungsbetriebe." },
+      { title: "Kita Connect", url: "/projekte/case-study-1", text: "App für Eltern und Betreuungsteams." },
+      { title: "Garage Flow", url: "/projekte/case-study-2", text: "Werkstatt-App für Termine, Fahrzeuge und Aufträge." },
+      { title: "Service Pilot", url: "/projekte/case-study-3", text: "Mobile Lösung für Klima- und Heizungsbetriebe." },
     ],
     faq: [
       {
@@ -306,24 +306,24 @@ export const services: Service[] = [
   },
 
   {
-    slug: "prozesse",
-    name: "Prozesse & Automatisierung",
-    badge: "Prozessoptimierung",
-    metaTitle: "Prozessoptimierung und Automatisierung für KMU | Codepixel",
+    slug: "prozesscoaching",
+    name: "Prozesscoaching",
+    badge: "Prozesse & Coaching",
+    metaTitle: "Prozesscoaching für KMU: Abläufe, Automatisierung und Coaching | Codepixel",
     metaDescription:
-      "Weniger Handarbeit, klare Abläufe: Prozess-Check ab CHF 490, Schnittstellen und Automatisierung für Ihr Unternehmen in der Schweiz.",
-    heroTitle: "Klare Prozesse. Weniger <span class='heading-script-accent'>Handarbeit</span>",
+      "Klare Abläufe, weniger Handarbeit und ein Team, das mitzieht: Prozess-Check ab CHF 490, Automatisierung und praxisnahes Coaching für KMU in der Schweiz.",
+    heroTitle: "Klare Abläufe. Ein Team, das <span class='heading-script-accent'>mitzieht</span>",
     heroSubtitle:
-      "Wir analysieren Ihre Abläufe, verbinden Ihre Systeme und automatisieren, was Ihr Team Zeit kostet.",
-    menuDescription: "Abläufe verbinden und entlasten",
+      "Wir analysieren Ihre Prozesse, automatisieren wiederkehrende Arbeit und begleiten Ihr Team, bis die neuen Abläufe im Alltag sitzen.",
+    menuDescription: "Abläufe verbessern, Team begleiten",
     menuIcon: "HiOutlineChartBar",
     intro:
-      "Viele Unternehmen verlieren jede Woche Stunden mit Aufgaben, die ein gut eingerichteter Ablauf von selbst erledigt.",
+      "Viele Unternehmen verlieren jede Woche Stunden mit doppelter Arbeit und unklaren Zuständigkeiten. Wir verbinden beides: bessere Abläufe und ein Team, das sie auch lebt.",
     pairs: [
       {
         problem: "Dieselben Daten werden mehrfach eingegeben",
         problemText: "Das kostet Zeit und führt zu Tippfehlern und widersprüchlichen Angaben.",
-        solution: "Systeme verbinden",
+        solution: "Systeme verbinden und automatisieren",
         solutionText:
           "Über Schnittstellen fliessen Daten automatisch zwischen Webseite, Kundenverwaltung, Kalender und Buchhaltung. Einmal erfassen genügt.",
       },
@@ -335,29 +335,29 @@ export const services: Service[] = [
           "Anfragen landen an einem Ort, werden automatisch erfasst und Ihr Team sieht jederzeit den aktuellen Status.",
       },
       {
-        problem: "Wiederkehrende Arbeit frisst Zeit",
-        problemText: "Bestätigungen, Erinnerungen, Berichte und Offerten werden jede Woche von Hand erstellt.",
-        solution: "Automatisieren, was sich wiederholt",
+        problem: "Verantwortlichkeiten sind unklar",
+        problemText: "Aufgaben bleiben liegen oder werden doppelt gemacht, und im Team entsteht Reibung.",
+        solution: "Rollen und Zuständigkeiten klären",
         solutionText:
-          "Standardaufgaben laufen automatisch im Hintergrund. Ihr Team gewinnt Zeit für Kundinnen, Kunden und die eigentliche Arbeit.",
+          "Gemeinsam legen wir fest, wer wofür verantwortlich ist, und machen das für alle verständlich und umsetzbar.",
       },
       {
-        problem: "Niemand weiss, wo es hakt",
-        problemText: "Es fühlt sich chaotisch an, aber die Ursachen sind nicht klar.",
-        solution: "Prozess-Check mit klaren Empfehlungen",
+        problem: "Neue Abläufe werden im Team nicht gelebt",
+        problemText: "Das neue System steht bereit, doch im Alltag wird weiter mit Excel und Zetteln gearbeitet.",
+        solution: "Coaching und Begleitung bei der Einführung",
         solutionText:
-          "Wir erfassen Ihre Abläufe, zeigen die grössten Zeitfresser und priorisieren, was sich am meisten lohnt.",
+          "Wir erklären verständlich, schulen praxisnah und begleiten Ihr Team, bis die neuen Abläufe selbstverständlich werden.",
       },
     ],
-    stepsTitle: "So optimieren wir Ihre Abläufe",
+    stepsTitle: "So verbessern wir Ihre Abläufe",
     steps: [
       { title: "Ist-Zustand erfassen", text: "Wir schauen uns an, wie Ihre Arbeit heute wirklich abläuft, im Büro und im Alltag Ihres Teams." },
-      { title: "Engpässe und Prioritäten", text: "Wir zeigen die grössten Zeitfresser und empfehlen, womit Sie zuerst beginnen." },
+      { title: "Engpässe und Prioritäten", text: "Wir zeigen die grössten Zeitfresser und klären Rollen, Zuständigkeiten und Ziele." },
       { title: "Umsetzen und automatisieren", text: "Wir richten Schnittstellen und automatische Abläufe ein und testen sie gemeinsam mit Ihnen." },
-      { title: "Team einführen und prüfen", text: "Wir begleiten die Einführung und prüfen, ob die neuen Abläufe im Alltag wirklich entlasten." },
+      { title: "Team coachen und verankern", text: "Wir begleiten Ihr Team in der Einführung und prüfen, ob die neuen Abläufe im Alltag wirklich entlasten." },
     ],
     packagesTitle: "Pakete und Preise",
-    packagesIntro: "Starten Sie mit dem Prozess-Check und entscheiden Sie danach, was sich für Sie lohnt.",
+    packagesIntro: "Starten Sie mit einem klaren ersten Schritt und entscheiden Sie danach, was sich für Sie lohnt.",
     packages: [
       {
         name: "Prozess-Check",
@@ -372,40 +372,41 @@ export const services: Service[] = [
         ],
       },
       {
-        name: "Automatisierung",
+        name: "Automatisierung & Coaching",
         price: "Ab CHF 1'900.–",
-        description: "Ein bis zwei Abläufe werden eingerichtet und automatisiert.",
+        description: "Ein bis zwei Abläufe werden eingerichtet, und Ihr Team wird bei der Einführung begleitet.",
         featured: true,
         features: [
           "Umsetzung von 1 bis 2 Abläufen",
           "Schnittstellen zu Ihren Systemen",
-          "Test und Einführung im Team",
+          "Drei Coaching-Sitzungen für Ihr Team",
           "Kurze Dokumentation",
         ],
       },
       {
-        name: "Rundum-Optimierung",
+        name: "Rundum-Begleitung",
         price: "Ab CHF 4'500.–",
-        description: "Für Unternehmen, die mehrere Abläufe gleichzeitig neu aufstellen möchten.",
+        description: "Für Unternehmen, die mehrere Abläufe neu aufstellen und das ganze Team mitnehmen möchten.",
         features: [
           "Mehrere Abläufe und Schnittstellen",
-          "Zentrale Übersicht für Ihr Team",
-          "Schulung und Begleitung",
+          "Workshop mit Ihrem Team",
+          "Coaching für Führung und Zuständigkeiten",
           "Nachbetreuung nach dem Start",
         ],
       },
     ],
     packagesNote:
-      "Der Prozess-Check wird bei einer anschliessenden Umsetzung auf Wunsch angerechnet.",
+      "Einzelne Coaching-Sitzungen (CHF 190.–) sind jederzeit möglich. Der Prozess-Check wird bei einer anschliessenden Umsetzung auf Wunsch angerechnet.",
     related: [
-      { title: "Garage Flow", url: "/case-studies/case-study-2", text: "Termine, Aufträge und Buchhaltung an einem Ort." },
-      { title: "Service Pilot", url: "/case-studies/case-study-3", text: "Vom Einsatz bis zur Übergabe an die Administration." },
+      { title: "Garage Flow", url: "/projekte/case-study-2", text: "Termine, Aufträge und Buchhaltung an einem Ort." },
+      { title: "Service Pilot", url: "/projekte/case-study-3", text: "Vom Einsatz bis zur Übergabe an die Administration." },
+      { title: "Klar führen: Coaching für Unternehmen", url: "/projekte/case-study-5", text: "Mehr Klarheit in Rollen, Kommunikation und Entscheidungen." },
     ],
     faq: [
       {
-        question: "Für welche Unternehmen lohnt sich ein Prozess-Check?",
+        question: "Für welche Unternehmen lohnt sich ein Prozesscoaching?",
         answer:
-          "Für alle, die das Gefühl haben, zu viel Zeit mit Administration, Suchen und doppelter Arbeit zu verbringen. Besonders bei kleinen und mittleren Unternehmen zeigt sich schnell, wo sich Aufwand sparen lässt.",
+          "Für alle, die das Gefühl haben, zu viel Zeit mit Administration, Suchen und doppelter Arbeit zu verbringen, oder bei denen neue Werkzeuge im Team nicht ankommen.",
       },
       {
         question: "Muss ich dafür meine bestehende Software wechseln?",
@@ -413,9 +414,9 @@ export const services: Service[] = [
           "Nicht unbedingt. Oft verbinden wir die Systeme, die Sie bereits nutzen, und automatisieren die Wege dazwischen.",
       },
       {
-        question: "Wie sehe ich, ob sich die Optimierung gelohnt hat?",
+        question: "Wo finden die Coaching-Sitzungen statt?",
         answer:
-          "Wir legen vorab fest, woran wir den Erfolg messen, zum Beispiel eingesparte Stunden pro Woche oder weniger Rückfragen. Nach der Einführung prüfen wir das gemeinsam.",
+          "Nach Absprache bei Ihnen vor Ort, bei uns im Thurgau oder online. Das legen wir im Erstgespräch fest.",
       },
     ],
     ctaTitle: "Wo verlieren Sie heute am meisten <span class='heading-script-accent'>Zeit</span>?",
@@ -423,120 +424,119 @@ export const services: Service[] = [
   },
 
   {
-    slug: "coaching",
-    name: "Coaching & Begleitung",
-    badge: "Coaching",
-    metaTitle: "Coaching und Begleitung für Unternehmen | Codepixel",
+    slug: "buchhaltung",
+    name: "Buchhaltung",
+    badge: "Buchhaltung",
+    metaTitle: "Buchhaltung für KMU und Selbstständige | Codepixel",
     metaDescription:
-      "Ehrliche Beratung und praxisnahes Coaching für Führung, Prozesse und die Einführung neuer Werkzeuge im Team.",
-    heroTitle: "Klar führen. Neues im Team <span class='heading-script-accent'>verankern</span>",
+      "Laufende Buchhaltung, MWST-Abrechnung, Lohnbuchhaltung und digitale Belegablage für KMU in Thurgau, Zürich und St. Gallen. Persönlich und transparent.",
+    heroTitle: "Buchhaltung, die einfach <span class='heading-script-accent'>stimmt</span>",
     heroSubtitle:
-      "Ehrliche Begleitung für Führung, Strukturen und die Einführung neuer digitaler Werkzeuge.",
-    menuDescription: "Klare Strukturen, starkes Team",
-    menuIcon: "HiOutlineUserGroup",
+      "Laufende Buchhaltung, Löhne und MWST aus einer Hand. Digital, pünktlich und mit klarem Überblick über Ihre Zahlen.",
+    menuDescription: "Zahlen im Griff, ohne Stress",
+    menuIcon: "HiOutlineCalculator",
     intro:
-      "Die beste Lösung nützt wenig, wenn sie im Alltag nicht ankommt. Coaching verbindet Technik, Menschen und Abläufe.",
+      "Belege sammeln, Rechnungen nachführen, Fristen einhalten: Buchhaltung frisst Zeit, die im Tagesgeschäft fehlt. Wir übernehmen das und sorgen für Ordnung in Ihren Zahlen.",
     pairs: [
       {
-        problem: "Verantwortlichkeiten sind unklar",
-        problemText: "Aufgaben bleiben liegen oder werden doppelt gemacht, und im Team entsteht Reibung.",
-        solution: "Rollen und Zuständigkeiten klären",
+        problem: "Belege stapeln sich",
+        problemText: "Quittungen, Rechnungen und Kontoauszüge liegen verteilt in Ordnern, E-Mails und Schubladen.",
+        solution: "Digitale Belegablage",
         solutionText:
-          "Gemeinsam legen wir fest, wer wofür verantwortlich ist, und machen das für alle verständlich und umsetzbar.",
+          "Belege werden fotografiert oder weitergeleitet und landen automatisch am richtigen Ort. Nichts geht mehr verloren.",
       },
       {
-        problem: "Neue Software wird im Team nicht genutzt",
-        problemText: "Das neue System steht bereit, doch im Alltag wird weiter mit Excel und Zetteln gearbeitet.",
-        solution: "Begleitung bei der Einführung",
+        problem: "Kein Überblick über die Zahlen",
+        problemText: "Wie es dem Unternehmen wirklich geht, zeigt sich erst beim Jahresabschluss.",
+        solution: "Laufende Buchhaltung mit Auswertung",
         solutionText:
-          "Wir erklären verständlich, schulen praxisnah und begleiten Ihr Team, bis die neuen Abläufe selbstverständlich werden.",
+          "Ihre Buchhaltung ist immer aktuell. Sie sehen Umsatz, Kosten und offene Rechnungen jederzeit auf einen Blick.",
       },
       {
-        problem: "Führungskräften fehlt Struktur im Alltag",
-        problemText: "Das Tagesgeschäft verdrängt Planung, Gespräche und wichtige Entscheidungen.",
-        solution: "Praxisnahes Führungscoaching",
+        problem: "MWST und Fristen bereiten Sorgen",
+        problemText: "Abrechnungen werden kurz vor knapp erstellt, und die Angst vor Fehlern bleibt.",
+        solution: "Pünktliche MWST-Abrechnung",
         solutionText:
-          "Wir arbeiten an konkreten Situationen aus Ihrem Alltag und entwickeln Routinen, die Sie sofort anwenden können.",
+          "Wir erstellen Ihre MWST-Abrechnungen termingerecht und behalten alle Fristen für Sie im Blick.",
       },
       {
-        problem: "Wachstum bringt Durcheinander",
-        problemText: "Was mit wenigen Personen funktionierte, trägt nicht mehr, wenn das Unternehmen wächst.",
-        solution: "Entscheidungen strukturiert vorbereiten",
+        problem: "Löhne kosten jeden Monat Nerven",
+        problemText: "Lohnabrechnungen, Sozialversicherungen und Lohnausweise sind aufwendig und fehleranfällig.",
+        solution: "Lohnbuchhaltung aus einer Hand",
         solutionText:
-          "Mit einer ehrlichen Aussensicht ordnen wir die Situation und erarbeiten klare nächste Schritte.",
+          "Wir erstellen Lohnabrechnungen, Meldungen an die Sozialversicherungen und die Lohnausweise am Jahresende.",
       },
     ],
-    stepsTitle: "So läuft das Coaching ab",
+    stepsTitle: "So übernehmen wir Ihre Buchhaltung",
     steps: [
-      { title: "Standortbestimmung", text: "Wir betrachten Ihre aktuelle Situation und das, was Sie beschäftigt." },
-      { title: "Ziele festlegen", text: "Gemeinsam definieren wir konkrete Ziele und woran Sie Fortschritte erkennen." },
-      { title: "Begleitung im Alltag", text: "In den Sitzungen erarbeiten wir Lösungen für echte Situationen und übertragen sie in die Praxis." },
-      { title: "Verankern und prüfen", text: "Wir schauen, was funktioniert, und sichern die Ergebnisse, damit sie bleiben." },
+      { title: "Kennenlernen", text: "Wir besprechen Ihr Unternehmen, Ihre aktuelle Buchhaltung und was Sie abgeben möchten." },
+      { title: "Einrichten", text: "Wir richten die Buchhaltungssoftware und die digitale Belegablage ein oder übernehmen Ihre bestehende Lösung." },
+      { title: "Laufend buchen", text: "Wir verbuchen Belege, gleichen Konten ab und erstellen MWST- und Lohnabrechnungen termingerecht." },
+      { title: "Abschluss vorbereiten", text: "Wir bereiten den Jahresabschluss sauber vor und stimmen ihn mit Ihnen oder Ihrer Treuhand ab." },
     ],
     packagesTitle: "Pakete und Preise",
-    packagesIntro: "Vom einzelnen Impuls bis zur längeren Begleitung. Sie wählen, was zu Ihnen passt.",
+    packagesIntro: "Monatlich planbare Kosten statt Überraschungen. Den genauen Preis legen wir nach Belegmenge fest.",
     packages: [
       {
-        name: "Impuls-Sitzung",
-        price: "CHF 190.–",
-        priceNote: "Einzelsitzung",
-        description: "Ein konkretes Thema, eine ehrliche Aussensicht und klare nächste Schritte.",
+        name: "Einrichtung",
+        price: "Ab CHF 490.–",
+        priceNote: "Einmalig",
+        description: "Der saubere Start in eine digitale Buchhaltung.",
         features: [
-          "Eine Sitzung nach Vereinbarung",
-          "Klärung eines konkreten Themas",
-          "Handlungsempfehlungen für den Alltag",
+          "Einrichtung der Buchhaltungssoftware (z. B. bexio)",
+          "Kontenplan nach Ihren Bedürfnissen",
+          "Digitale Belegablage",
+          "Persönliche Einführung",
         ],
       },
       {
-        name: "Coaching-Paket",
-        price: "CHF 520.–",
-        priceNote: "3 Sitzungen",
-        description: "Genug Zeit, um Themen anzugehen und erste Veränderungen im Alltag zu erproben.",
+        name: "Buchhaltung laufend",
+        price: "Ab CHF 190.–",
+        priceNote: "pro Monat",
+        description: "Ihre Finanzbuchhaltung, laufend und aktuell geführt.",
         featured: true,
         features: [
-          "Drei Sitzungen",
-          "Ziele und Vorgehen gemeinsam festlegen",
-          "Aufgaben zwischen den Terminen",
-          "Auswertung der Ergebnisse",
+          "Verbuchen aller Belege",
+          "Bank- und Kontenabstimmung",
+          "MWST-Abrechnung",
+          "Quartalsübersicht Ihrer Zahlen",
         ],
       },
       {
-        name: "Begleitung",
-        price: "Ab CHF 1'290.–",
-        priceNote: "6 Sitzungen und Team-Workshop",
-        description: "Für Veränderungen, bei denen das ganze Team mitgenommen werden soll.",
+        name: "Buchhaltung & Löhne",
+        price: "Ab CHF 390.–",
+        priceNote: "pro Monat",
+        description: "Für Unternehmen mit Mitarbeitenden, die alles aus einer Hand möchten.",
         features: [
-          "Sechs Sitzungen",
-          "Workshop mit Ihrem Team",
-          "Begleitung bei der Einführung neuer Abläufe",
-          "Nachbesprechung nach einigen Wochen",
+          "Alles aus «Buchhaltung laufend»",
+          "Monatliche Lohnabrechnungen",
+          "Meldungen an Sozialversicherungen",
+          "Lohnausweise und Vorbereitung Jahresabschluss",
         ],
       },
     ],
     packagesNote:
-      "Coaching lässt sich mit Software oder Prozessoptimierung kombinieren, damit neue Lösungen im Team wirklich ankommen.",
-    related: [
-      { title: "Klar führen: Coaching für Unternehmen", url: "/case-studies/case-study-5", text: "Mehr Klarheit in Rollen, Kommunikation und Entscheidungen." },
-    ],
+      "Der Preis richtet sich nach der Anzahl Belege und Mitarbeitenden. Im Erstgespräch erhalten Sie ein verbindliches Angebot.",
+    related: [],
     faq: [
       {
-        question: "Für wen eignet sich das Coaching?",
+        question: "Mit welcher Buchhaltungssoftware arbeiten Sie?",
         answer:
-          "Für Inhaberinnen, Inhaber und Führungskräfte kleiner und mittlerer Unternehmen, die Strukturen verbessern oder Veränderungen im Team einführen möchten.",
+          "Bevorzugt mit bexio. Wir können aber auch Ihre bestehende Lösung übernehmen. Das klären wir im Erstgespräch.",
       },
       {
-        question: "Wo und wie finden die Sitzungen statt?",
+        question: "Muss ich meine Belege noch in Papierform abgeben?",
         answer:
-          "Nach Absprache bei Ihnen vor Ort, bei uns im Thurgau oder online. Das legen wir im Erstgespräch fest.",
+          "Nein. Sie fotografieren Belege mit dem Handy oder leiten sie per E-Mail weiter. Den Rest erledigen wir.",
       },
       {
-        question: "Kann ich das Coaching mit einem Digitalisierungsprojekt verbinden?",
+        question: "Machen Sie auch den Jahresabschluss und die Steuererklärung?",
         answer:
-          "Ja, das ist sogar sinnvoll. So wird die neue Lösung nicht nur gebaut, sondern auch verstanden und genutzt.",
+          "Wir bereiten den Jahresabschluss vollständig vor und arbeiten bei Bedarf mit Ihrer Treuhand zusammen. Was genau übernommen wird, legen wir gemeinsam fest.",
       },
     ],
-    ctaTitle: "Welche Frage beschäftigt Sie <span class='heading-script-accent'>gerade</span>?",
-    ctaText: "Im kostenlosen Erstgespräch klären wir, ob und wie wir Sie unterstützen können.",
+    ctaTitle: "Bereit für Zahlen, die <span class='heading-script-accent'>stimmen</span>?",
+    ctaText: "Erzählen Sie uns, wie Ihre Buchhaltung heute läuft. Sie erhalten eine unverbindliche Einschätzung.",
   },
 ];
 

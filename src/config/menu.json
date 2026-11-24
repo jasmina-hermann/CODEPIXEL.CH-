@@ -1,45 +1,24 @@
 {
   "main": [
-    { "name": "Startseite", "url": "/" },
     {
-      "name": "Dienstleistungen",
-      "url": "/leistungen",
-      "hasChildren": true,
-      "mega_menu": {
-        "mega_menu_title": "Was wir für Sie tun",
-        "page_title": "",
-        "mega_menu_groups": [
-          [
-            {
-              "name": "Webseiten",
-              "url": "/leistungen/webseiten",
-              "description": "Design, das Anfragen bringt",
-              "icon": "HiOutlineNewspaper"
-            },
-            {
-              "name": "Software & Apps",
-              "url": "/leistungen/software",
-              "description": "Programme und Apps nach Mass",
-              "icon": "HiOutlineCog"
-            }
-          ],
-          [
-            {
-              "name": "Prozesse",
-              "url": "/leistungen/prozesse",
-              "description": "Abläufe verbinden, entlasten",
-              "icon": "HiOutlineChartBar"
-            },
-            {
-              "name": "Coaching",
-              "url": "/leistungen/coaching",
-              "description": "Klare Strukturen, starkes Team",
-              "icon": "HiOutlineUserGroup"
-            }
-          ]
-        ],
-        "page_links": []
-      }
+      "name": "Startseite",
+      "url": "/"
+    },
+    {
+      "name": "Webseite",
+      "url": "/leistungen/webseiten"
+    },
+    {
+      "name": "Software & Apps",
+      "url": "/leistungen/software"
+    },
+    {
+      "name": "Prozesscoaching",
+      "url": "/leistungen/prozesscoaching"
+    },
+    {
+      "name": "Buchhaltung",
+      "url": "/leistungen/buchhaltung"
     },
     {
       "name": "Projekte",
@@ -87,26 +66,77 @@
         "page_links": []
       }
     },
-    { "name": "Preise", "url": "/preise" },
-    { "name": "Über uns", "url": "/ueber-uns" }
+    {
+      "name": "Preise",
+      "url": "/preise"
+    },
+    {
+      "name": "Über uns",
+      "url": "/ueber-uns"
+    }
   ],
   "footer_company": [
-    { "name": "Startseite", "url": "/" },
-    { "name": "Leistungen", "url": "/leistungen" },
-    { "name": "Webseiten", "url": "/leistungen/webseiten" },
-    { "name": "Software & Apps", "url": "/leistungen/software" },
-    { "name": "Prozesse", "url": "/leistungen/prozesse" },
-    { "name": "Coaching", "url": "/leistungen/coaching" },
-    { "name": "Projekte", "url": "/projekte" },
-    { "name": "Preise", "url": "/preise" },
-    { "name": "Über uns", "url": "/ueber-uns" },
-    { "name": "Kontakt", "url": "/kontakt" }
+    {
+      "name": "Startseite",
+      "url": "/"
+    },
+    {
+      "name": "Leistungen",
+      "url": "/leistungen"
+    },
+    {
+      "name": "Webseiten",
+      "url": "/leistungen/webseiten"
+    },
+    {
+      "name": "Software & Apps",
+      "url": "/leistungen/software"
+    },
+    {
+      "name": "Prozesscoaching",
+      "url": "/leistungen/prozesscoaching"
+    },
+    {
+      "name": "Buchhaltung",
+      "url": "/leistungen/buchhaltung"
+    },
+    {
+      "name": "Projekte",
+      "url": "/projekte"
+    },
+    {
+      "name": "Preise",
+      "url": "/preise"
+    },
+    {
+      "name": "Über uns",
+      "url": "/ueber-uns"
+    },
+    {
+      "name": "Kontakt",
+      "url": "/kontakt"
+    }
   ],
   "footer_legal": [
-    { "name": "Datenschutz", "url": "/datenschutz" },
-    { "name": "AGB", "url": "/agb" },
-    { "name": "Impressum", "url": "/impressum" },
-    { "name": "Cookies", "url": "/cookie" },
-    { "name": "Kontakt", "url": "/kontakt" }
+    {
+      "name": "Datenschutz",
+      "url": "/datenschutz"
+    },
+    {
+      "name": "AGB",
+      "url": "/agb"
+    },
+    {
+      "name": "Impressum",
+      "url": "/impressum"
+    },
+    {
+      "name": "Cookies",
+      "url": "/cookie"
+    },
+    {
+      "name": "Kontakt",
+      "url": "/kontakt"
+    }
   ]
 }
