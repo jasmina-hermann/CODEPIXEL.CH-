@@ -5,7 +5,7 @@
       "url": "/"
     },
     {
-      "name": "Webseite",
+      "name": "Webseiten",
       "url": "/leistungen/webseiten"
     },
     {
@@ -19,52 +19,6 @@
     {
       "name": "Buchhaltung",
       "url": "/leistungen/buchhaltung"
-    },
-    {
-      "name": "Projekte",
-      "url": "/projekte",
-      "hasChildren": true,
-      "mega_menu": {
-        "mega_menu_title": "Aus der Praxis",
-        "page_title": "",
-        "mega_menu_groups": [
-          [
-            {
-              "name": "Kita Connect",
-              "url": "/projekte/case-study-1",
-              "description": "App für Eltern und Kitas",
-              "icon": "HiOutlineUserGroup"
-            },
-            {
-              "name": "Garage Flow",
-              "url": "/projekte/case-study-2",
-              "description": "Werkstatt-App für Garagen",
-              "icon": "HiOutlineCog"
-            },
-            {
-              "name": "Service Pilot",
-              "url": "/projekte/case-study-3",
-              "description": "App für Heizung und Klima",
-              "icon": "HiOutlineChartBar"
-            }
-          ],
-          [
-            {
-              "name": "Webseiten nach Mass",
-              "url": "/projekte/case-study-4",
-              "description": "Auftritte, die Vertrauen schaffen",
-              "icon": "HiOutlineNewspaper"
-            },
-            {
-              "name": "Klar führen",
-              "url": "/projekte/case-study-5",
-              "description": "Coaching für Unternehmen",
-              "icon": "HiOutlinePencil"
-            }
-          ]
-        ],
-        "page_links": []
-      }
     },
     {
       "name": "Preise",
