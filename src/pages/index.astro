@@ -1,7 +1,6 @@
 ---
 import Base from "@/layouts/Base.astro";
 import Hero from "@/components/Hero.astro";
-import HeroStudio from "@/components/HeroStudio.astro";
 import LaptopScroll from "@/components/LaptopScroll.astro";
 import Statistics from "@/components/Statistics";
 import CallToAction from "@/partials/CallToAction.astro";
@@ -30,7 +29,6 @@ const { banner } = homepage.frontmatter;
   <Hero data={banner} />
   <TrustedClients data={trusted_clients} client:visible />
   <LaptopScroll />
-  <HeroStudio />
   <ServicePillars />
   <ProcessFlow />
   <Statistics data={statistics} client:visible />
