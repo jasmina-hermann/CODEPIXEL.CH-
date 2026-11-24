@@ -1,5 +1,4 @@
 ---
-import AnimatedButton from "@/components/AnimatedButton.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import ImageMod from "./ImageMod.astro";
 interface Props {
@@ -60,7 +59,7 @@ const rotatingPrefix: string = data.rotating_prefix ?? "";
             )
           }
           <!-- TITLE -->
-          <h1 id="hero-title" class="hero-text mb-4">
+          <h1 id="hero-title" class="hero-text mb-12! md:mb-20!">
             <span set:html={markdownify(data.title).__html} />
             {
               rotatingWords.length > 0 && (
@@ -87,32 +86,6 @@ const rotatingPrefix: string = data.rotating_prefix ?? "";
           <p id="hero-content" class="text-lg sm:w-3/5">
             {data.content}
           </p>
-          <!-- BUTTONS -->
-          <div
-            id="hero-buttons"
-            class="mt-10 flex items-center gap-5 flex-wrap justify-center"
-          >
-            {
-              data.button_dark?.enable && (
-                <AnimatedButton
-                  classNames="btn btn-dark"
-                  href={data.button_dark?.link || "/"}
-                >
-                  {data.button_dark?.label}
-                </AnimatedButton>
-              )
-            }
-            {
-              data.button_primary?.enable && (
-                <AnimatedButton
-                  classNames="btn btn-primary"
-                  href={data.button_primary?.link || "/"}
-                >
-                  {data.button_primary?.label}
-                </AnimatedButton>
-              )
-            }
-          </div>
         </div>
       </div>
     </div>
@@ -382,7 +355,6 @@ const rotatingPrefix: string = data.rotating_prefix ?? "";
       ["hero-badge", { opacity: ["0", "1"], transform: ["translateY(-20px)", "translateY(0)"] }, 0.5, 0.2],
       ["hero-title", { opacity: ["0", "1"], transform: ["translateY(20px)", "translateY(0)"] }, 0.8, 0.3],
       ["hero-content", { opacity: ["0", "1"], transform: ["translateY(20px)", "translateY(0)"] }, 0.5, 0.5],
-      ["hero-buttons", { opacity: ["0", "1"], transform: ["translateY(20px)", "translateY(0)"] }, 0.5, 0.6],
     ];
     items.forEach(([id, keyframes, duration, delay]) => {
       const el = document.getElementById(id);

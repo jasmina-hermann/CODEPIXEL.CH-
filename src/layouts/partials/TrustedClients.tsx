@@ -10,7 +10,7 @@ interface PageData {
 }
 
 const LOGO_GAP_PX = 72;
-const MARQUEE_SPEED_PX_PER_SECOND = 90;
+const MARQUEE_SPEED_PX_PER_SECOND = 35;
 
 const TrustedClients = ({ data }: { data: PageData }) => {
   const section = data.frontmatter;
